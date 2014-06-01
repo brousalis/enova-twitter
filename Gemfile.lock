@@ -28,6 +28,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bootstrap-sass (3.1.1.1)
+      sass (~> 3.2)
     builder (3.2.2)
     celluloid (0.15.2)
       timers (~> 1.1.0)
@@ -82,6 +84,7 @@ GEM
     mime-types (1.25.1)
     minitest (5.3.4)
     multi_json (1.10.1)
+    normalize-rails (3.0.1)
     polyglot (0.3.5)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -159,11 +162,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   coffee-rails (~> 4.0.0)
   guard-livereload
   haml
   jbuilder (~> 2.0)
   jquery-rails
+  normalize-rails
   quiet_assets
   rack-livereload
   rails (= 4.1.1)

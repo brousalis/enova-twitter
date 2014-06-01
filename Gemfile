@@ -39,6 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'haml'
+gem 'bootstrap-sass'
 
 group :development do 
   gem 'thin'
