@@ -38,3 +38,12 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'haml'
+
+group :development do 
+  gem 'thin'
+  gem 'quiet_assets'
+  
+  gem 'guard-livereload', require: false
+  gem 'rack-livereload'
+end
