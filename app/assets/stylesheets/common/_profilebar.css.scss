@@ -1,0 +1,40 @@
+.profilebar {
+  @extend .navbar;
+  top: $navbar-height;
+  height: $profilebar-height;
+
+  .nav {
+    li {
+      text-align: center;
+      padding: 10px 15px 5px;
+      height: $profilebar-height;
+
+      span { display: block; }
+
+      .text {
+        margin-top: 5px;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: grey;
+      }
+
+      .value {
+        font-weight: bold;
+        font-size: 18px;
+        color: $brand-primary;
+
+        i {
+          color: $search-bg;
+          float: none;
+          margin-top: 0;
+        }
+      }
+
+      &.active {
+        border-bottom: $navbar-border-height solid $brand-primary;
+        .value { color: #000; }
+      }
+    }
+  }
+}

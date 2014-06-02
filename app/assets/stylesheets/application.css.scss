@@ -5,6 +5,7 @@
 
 @import 'common/utility';
 @import 'common/navbar';
+@import 'common/profilebar';
 @import 'common/buttons';
 
 * { 
@@ -14,9 +15,16 @@
 
 body {
   padding-top: $navbar-height;
+  height: 9000px;
+
+  -webkit-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
 }
 
-#page {
-  height: 100%;
-}
+#page { height: 100%; }
+
+a { color: $brand-primary; }
+a:hover { text-decoration: none; }
 

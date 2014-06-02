@@ -40,7 +40,6 @@
         display: block;
         font-size: 14px;
         line-height: 1;
-        height: $navbar-height;
 
         span.icon {
           width: 24px;
@@ -57,13 +56,7 @@
           }
         }
 
-        i {
-          font-size: 18px;
-          float: left;
-          margin-top: 16px;
-        }
-
-        .text {
+        .link-text {
           float: left;
           margin-left: 5px;
           margin-top: 18px;
@@ -73,13 +66,24 @@
   }
 
   div[role='navigation'] {
-    .nav li a{
-      padding: 0px 20px 0 10px;
-    }
-    .nav li.active,
-    .nav li:hover {
-      border-bottom: 5px solid $brand-primary;
-      a { color: $brand-primary; }
+    .nav li {
+      a {
+        padding: 0px 20px 0 10px;
+        color: #666;
+
+        i {
+          font-size: 18px;
+          float: left;
+          margin-top: 16px;
+        }
+      }
+
+      &.active, 
+      &:hover {
+        border-bottom: 5px solid $brand-primary;
+
+        a { color: $brand-primary; }
+      }
     }
   }
 

@@ -106,9 +106,24 @@ add button styles
 position fixed navbar
 explain z-index
 padding on body
+height 9000 on body
 remove container padding
 ```
 ```
+let them implement profilebar
+vim layouts/_profilebar.html.haml
+add to app.haml
+vim stylesheets/_profilebar.css.scss
+extend .navbar
+top: $navbar-height
+style .nav
+  add $profilebar-height
+  style value
+  fix more button
+  fix issue with icon 
+  global link decoration
+
+
 
 
 
