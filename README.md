@@ -122,6 +122,23 @@ style .nav
   fix more button
   fix issue with icon 
   global link decoration
+```
+```
+discuss how grids work
+break into xs-3 and xs-9
+add avatar html/class, image into avatar
+add body background color
+position relative on profilebar
+add more margin top profilebar
+style avatar
+  display inline block vs block
+  explain box-shadow and border combo
+  explain border radius adjustment
+wrap with profile-avatar for positioning
+
+
+
+
 
 
 
