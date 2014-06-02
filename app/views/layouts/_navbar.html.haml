@@ -1,0 +1,41 @@
+.navbar
+  .container
+    %div.logo Enova
+
+    %div.pull-left{role: 'navigation'}
+      %ul.nav
+        %li
+          %a{href: '#'} 
+            = fa_icon 'home'
+            %span.text Home
+        %li
+          %a{href: '#'}
+            = fa_icon 'bell'
+            %span.text Notifications
+        %li
+          %a{href: '#'} 
+            //%span.icon.icon-discover
+            = fa_icon 'rocket'
+            %span.text Discover 
+        %li
+          %a{href: '#'} 
+            = fa_icon 'user'
+            %span.text Me 
+
+    .pull-right
+      %div{role: 'search'}
+        //%form
+        %input.search-input{type: 'text', placeholder: 'Search'} 
+      %ul.nav
+        %li
+          %a{href: '#'}
+            %span.icon.icon-direct-messages
+        %li
+          %a{href: '#'}
+            %span.icon.icon-settings
+        %li
+          %a.btn{href: '#'}
+            %span.icon.icon-compose
+
+
+

@@ -1,0 +1,77 @@
+.navbar {
+  background: #fff;
+  width: 100%;
+  height: $navbar-height;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  .logo {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background: image-url('enova.png') no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+    left: 50%;
+    position: absolute;
+    top: 7px;
+    margin-left: -32px;
+  }
+
+  .nav {
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+      float: left;
+      height: $navbar-height;
+      margin-right: 30px;
+
+      a {
+        display: block;
+        font-size: 15px;
+        line-height: 1;
+        height: $navbar-height;
+        padding: 0px 0px;
+
+        span.icon {
+          width: 24px;
+          height: 22px;
+          display: inline-block;
+          line-height: 1;
+          float: left;
+          margin-top: 13px;
+          background: transparent;
+
+          &.icon-discover {
+            background: image-url('hashtag.png') no-repeat;
+            background-size: 100%;
+          }
+        }
+
+        i {
+          font-size: 22px;
+          float: left;
+          margin-top: 13px;
+        }
+
+        .text {
+          float: left;
+          margin-left: 10px;
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+

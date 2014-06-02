@@ -40,6 +40,7 @@ gem 'spring',        group: :development
 
 gem 'haml'
 gem 'bootstrap-sass'
+gem 'font-awesome-rails'
 
 group :development do 
   gem 'thin'

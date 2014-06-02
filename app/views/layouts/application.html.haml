@@ -7,6 +7,9 @@
     = csrf_meta_tags 
 
   %body
-    .container
-      = yield
+    #page{class: "#{controller_name}"}
+      = render 'layouts/navbar' 
+
+      .container
+        = yield
 

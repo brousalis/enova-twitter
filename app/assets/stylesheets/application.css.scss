@@ -1,6 +1,10 @@
 @import 'variables';
 @import 'mixins';
 @import 'bootstrap-custom';
+@import 'font-awesome';
+
+@import 'common/utility';
+@import 'common/navbar';
 
 * { 
   outline: 0;
@@ -8,5 +12,10 @@
 }
 
 body {
-
+  padding-top: $navbar-height;
 }
+
+#page {
+  height: 100%;
+}
+
