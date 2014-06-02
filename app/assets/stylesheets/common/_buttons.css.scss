@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 12px;
+
+  &:active, &.active { } 
+
+  &:hover { text-decoration: none; } 
+
+  &[disabled] { }
+}
+
+.btn-primary {
+  background: $brand-primary;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+    background: darken($brand-primary, 5%);
+
+  }
+}

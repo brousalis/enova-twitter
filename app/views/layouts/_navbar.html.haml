@@ -4,7 +4,7 @@
 
     %div.pull-left{role: 'navigation'}
       %ul.nav
-        %li
+        %li.active
           %a{href: '#'} 
             = fa_icon 'home'
             %span.text Home
@@ -25,17 +25,19 @@
     .pull-right
       %div{role: 'search'}
         //%form
-        %input.search-input{type: 'text', placeholder: 'Search'} 
-      %ul.nav
+        %input.search-input{type: 'text', placeholder: 'Search'}/ 
+        %span.search-icon
+          = fa_icon 'search'
+      %ul.nav.right-actions
         %li
           %a{href: '#'}
-            %span.icon.icon-direct-messages
+            = fa_icon 'envelope'
         %li
           %a{href: '#'}
-            %span.icon.icon-settings
+            = fa_icon 'cog'
         %li
-          %a.btn{href: '#'}
-            %span.icon.icon-compose
+          %button.btn.btn-primary
+            = fa_icon 'pencil-square-o'
 
 
 

@@ -57,39 +57,59 @@ vim stylesheets/mixins.css.scss
 mkdir stylesheets/common
 mkdir stylesheets/pages
 setup app.css
-cp $(bundle show bootstrap-sass)/vendor/assets/stylesheets/bootstrap.scss 
-app/assets/stylesheets/bootstrap-custom.scss
+cp $(bundle show bootstrap-sass)/vendor/assets/stylesheets/bootstrap.scss app/assets/stylesheets/bootstrap-custom.scss
 ```
 ```
 explain container
 #page{class: controller_name}
 explain partials
-explain how to break apart topbar
+explain how to break apart navbar verbially
 mock up navbar in html
 show using inspect elements what it looks like
+explain guess and checking
+
 create common/navbar.css.scss
 explain pull-right, common. use on navbar
-style logo basic
-create common/icon.css.scss
-work on navbar .nav, introduce variables
+
+work on navbar .nav, introduce variables with height
 introduce shorthand with padding
 work on icons, show span.icon
 explain image asset pipeline
+
 add font-awesome
 explain icon font
 align icon and font-size 
+
 brand primary, link color variables
 tighten nav, color, padding
 add navbar border-bottom, explain rgba
 center logo, resize
+
 style searchbar
-style secondary list, one icon, then button
-create basic button styles, primary/secondary
+  explain input ending with /
+  background, rounding, positioning
+  add icon to search, padding to right
+  add focus interaction
+  add animation
+
+style secondary list
+  add right-actions class
+  proper spacing
+  color of icons
+  add hover style, explain difference between on a/i
+
+add button styles
+  fix spacing by adding margin
+  add basic buttons to index page to show link_to
+  add hover style
+
 position fixed navbar
 explain z-index
 padding on body
+remove container padding
 ```
-move to content
+```
+
 
 
 

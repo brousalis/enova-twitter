@@ -9,6 +9,8 @@
   right: 0;
   z-index: 1000;
 
+  .container { padding: 0; }
+
   .logo {
     width: 32px;
     height: 32px;
@@ -33,14 +35,12 @@
       position: relative;
       float: left;
       height: $navbar-height;
-      margin-right: 30px;
 
       a {
         display: block;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1;
         height: $navbar-height;
-        padding: 0px 0px;
 
         span.icon {
           width: 24px;
@@ -58,17 +58,78 @@
         }
 
         i {
-          font-size: 22px;
+          font-size: 18px;
           float: left;
-          margin-top: 13px;
+          margin-top: 16px;
         }
 
         .text {
           float: left;
-          margin-left: 10px;
+          margin-left: 5px;
           margin-top: 18px;
         }
       }
+    }
+  }
+
+  div[role='navigation'] {
+    .nav li a{
+      padding: 0px 20px 0 10px;
+    }
+    .nav li.active,
+    .nav li:hover {
+      border-bottom: 5px solid $brand-primary;
+      a { color: $brand-primary; }
+    }
+  }
+
+  div[role='search'] {
+    float: left;
+    position: relative;
+
+    .search-input {
+      margin-top: 7px;
+      font-size: 13px;
+      padding: 7px 12px;
+      background: $search-bg;
+      border-radius: 20px;
+      border: none;
+      color: $search-color;
+      width: 220px;
+      @include transition(0.1s all linear);
+
+      &:focus { background: $search-bg-focus; }
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      color: #fff;
+    }
+  }
+
+  .right-actions {
+    margin-left: 10px;
+
+    li a {
+      padding: 0 12px;
+      color: $search-bg;
+      @include transition(0.1s all linear);
+
+      &:hover { color: $brand-primary; }
+
+      i {
+        font-size: 24px;
+        margin-top: 11px;
+      }
+    }
+
+    li button {
+      margin: 7px 10px;
+      padding: 0 6px 0 8px;
+      height: 32px;
+      font-size: 20px;
     }
   }
 }
