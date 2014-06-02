@@ -113,7 +113,7 @@ remove container padding
 let them implement profilebar
 vim layouts/_profilebar.html.haml
 add to app.haml
-vim stylesheets/_profilebar.css.scss
+vim stylesheets/_navbar.css.scss
 extend .navbar
 top: $navbar-height
 style .nav
