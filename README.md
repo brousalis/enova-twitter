@@ -137,10 +137,6 @@ style avatar
 wrap with profile-avatar for positioning
 ```
 ```
-vim layouts/_profile_hero.html.haml
-vim pages/profile.css.scss
-move profile-navbar into profile
-background-image, height 500px 
 add user-actions, button and btn-secondary
 make profile .nav width 100%
 add user-actions to position right
@@ -148,17 +144,10 @@ style btn-secondary
   use linear-gradient
 style btn-icon
 align buttons
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+remove hover on more and user-actions
+```
+```
+vim layouts/_profile_hero.html.haml
+vim pages/profile.css.scss
+move profile-navbar into profile
+background-image, height 500px 
