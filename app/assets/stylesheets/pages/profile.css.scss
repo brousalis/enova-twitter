@@ -50,6 +50,13 @@
         border-bottom: $navbar-border-height solid $brand-primary;
         .value { color: #000; }
       }
+
+      &.more, &.user-actions {
+        &.active, &:hover {
+          border-bottom: none;
+          .value { color: $brand-primary; }
+        }
+      }
     }
   }
 

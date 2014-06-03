@@ -1,13 +1,12 @@
+### setting up basic app
 ```
-TODO: slides on basic html/css
-```
-```
-gem install rails
+gem install rails on system
 rails new twitter
 git init
 rbenv local 2.0.0-p248
 bundle
 ```
+### installing some useful dev gems
 ```
 gem install powify
 pow create
@@ -26,6 +25,7 @@ bootstrap-sass
 bundle
 powsr
 ```
+### basic index route 
 ```
 vim app/controllers/site_controller.rb 
 class sitecontroller < applicationcontroller
@@ -36,22 +36,21 @@ vim app/views/site/index.html.haml
 testing
 pow browse
 ```
+### live reload on code changes 
 ```
 be guard guard init
 vim Guardfile
 	remove all but live-reload
 vim config/env/dev.rb 
-config.middleware.use Rack::LiveReload
+  config.middleware.use Rack::LiveReload
 powsr
 be guard
 ```
+### setup file structure 
 ```
 mv layouts/app.html.erb to app.html.haml
 mv stylesheets/app.css to app.css.scss
-bundle 
-powsr
-```
-```
+show conversion
 vim stylesheets/variables.css.scss
 vim stylesheets/mixins.css.scss
 mkdir stylesheets/common
@@ -59,19 +58,23 @@ mkdir stylesheets/pages
 setup app.css
 cp $(bundle show bootstrap-sass)/vendor/assets/stylesheets/bootstrap.scss app/assets/stylesheets/bootstrap-custom.scss
 ```
+### break down site 
 ```
-explain container
-#page{class: controller_name}
+explain container, how to break down site on whiteboard
+create container #page{class: controller_name}
 explain partials
+vim layouts/_navbar.html.haml
 explain how to break apart navbar verbially
 mock up navbar in html
 show using inspect elements what it looks like
 explain guess and checking
 
-create common/navbar.css.scss
-explain pull-right, common. use on navbar
+vim common/_navbar.css.scss
+explain pull-right, common folder . 
+vim common/_utility.css.scss
+use on navbar
 
-work on navbar .nav, introduce variables with height
+work on navbar .nav, introduce variables with height $navbar-height
 introduce shorthand with padding
 work on icons, show span.icon
 explain image asset pipeline
