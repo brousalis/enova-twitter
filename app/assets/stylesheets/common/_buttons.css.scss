@@ -23,6 +23,22 @@
   &:hover {
     color: #fff;
     background: darken($brand-primary, 5%);
+  }
+}
 
+.btn-secondary {
+  @include gradient-vertical(#fff, #f1f1f1);
+  border: 1px solid #f1f1f1;
+  color: #444;
+  font-weight: bold;
+
+  i {
+    color: $brand-primary;
+    margin-right: 5px;
+  }
+
+  &:hover {
+    border-color: #ededed;
+    @include gradient-vertical(#fff, #ededed);
   }
 }

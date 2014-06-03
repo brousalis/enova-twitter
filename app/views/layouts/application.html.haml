@@ -9,8 +9,10 @@
   %body
     #page{class: "#{controller_name}"}
       = render 'layouts/navbar' 
-      = render 'layouts/profile_navbar' 
 
-      .container
-        = yield
+      .profile-header
+        = render 'layouts/profile_hero'
+        = render 'layouts/profile_navbar' 
+
+      = yield
 

@@ -1,10 +1,10 @@
 .navbar
   .container
-    %div.logo Enova
+    .logo Enova
 
-    %div.pull-left{role: 'navigation'}
+    .pull-left{role: 'navigation'}
       %ul.nav
-        %li.active
+        %li
           %a{href: '#'} 
             = fa_icon 'home'
             %span.link-text Home
@@ -28,6 +28,7 @@
         %input.search-input{type: 'text', placeholder: 'Search'}/ 
         %span.search-icon
           = fa_icon 'search'
+
       %ul.nav.right-actions
         %li
           %a{href: '#'}
@@ -36,7 +37,7 @@
           %a{href: '#'}
             = fa_icon 'cog'
         %li
-          %button.btn.btn-primary
+          %a{href: '#'}
             = fa_icon 'pencil-square-o'
 
 

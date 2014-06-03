@@ -110,14 +110,14 @@ height 9000 on body
 remove container padding
 ```
 ```
-let them implement profilebar
-vim layouts/_profilebar.html.haml
+let them implement profile_navbar
+vim layouts/_profile_navbar.html.haml
 add to app.haml
 vim stylesheets/_navbar.css.scss
 extend .navbar
 top: $navbar-height
 style .nav
-  add $profilebar-height
+  add $profile-navbar-height
   style value
   fix more button
   fix issue with icon 
@@ -128,13 +128,28 @@ discuss how grids work
 break into xs-3 and xs-9
 add avatar html/class, image into avatar
 add body background color
-position relative on profilebar
-add more margin top profilebar
+position relative on profile_navbar
+add more margin top profile_navbar
 style avatar
   display inline block vs block
   explain box-shadow and border combo
   explain border radius adjustment
 wrap with profile-avatar for positioning
+```
+```
+vim layouts/_profile_hero.html.haml
+vim pages/profile.css.scss
+move profile-navbar into profile
+background-image, height 500px 
+add user-actions, button and btn-secondary
+make profile .nav width 100%
+add user-actions to position right
+style btn-secondary
+  use linear-gradient
+style btn-icon
+align buttons
+
+
 
 
 

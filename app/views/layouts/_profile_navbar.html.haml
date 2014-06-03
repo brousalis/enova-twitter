@@ -5,6 +5,7 @@
         .profile-avatar
           %a.avatar{href: '#'} 
             = image_tag 'enova.png'
+
       .col-xs-9
         %ul.nav
           %li.active
@@ -33,3 +34,9 @@
               %span.value
                 More
                 = fa_icon 'chevron-down'
+          %li.user-actions
+            %a.btn.settings{href: '#'}
+              = fa_icon 'cog'
+            %a.btn.btn-secondary.follow{href: '#'} 
+              = fa_icon 'thumbs-up'
+              Follow
